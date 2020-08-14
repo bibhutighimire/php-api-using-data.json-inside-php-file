@@ -16,23 +16,16 @@
      
      ?>
   
-   <ol>
-       <?php foreach ( $blogsRec as $blogInd ) :   ?>
-      
-        <dl>
-        <dt>ID: </dt>
-        <dd><?php echo $blogInd->id; ?></dd>
-        
-        <dt>Title: </dt>
-        <dd><?php echo $blogInd->title; ?></dd>
+  <ol>
+      <?php foreach ( $blogsRec as $blogInd ) : ?>
+        <?php $currentBlog = new BlogFromApi( $blogInd->id,$blogInd->title,$blogInd->content); 
+        ?>
        
-        <dt>Content: </dt>
-        <dd><?php echo $blogInd->content; ?></dd>
-        </dl>
-
-
-       <?php endforeach; ?>
-     </ol>
+          <?php   $currentBlog->output();
+           ?>
+     
+      <?php endforeach; ?>
+    </ol>
    <?php endif; ?> 
 
 <?php include 'templates/footer.php';
