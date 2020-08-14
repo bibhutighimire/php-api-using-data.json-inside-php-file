@@ -10,7 +10,7 @@
    <h1><?php echo $title; ?></h1>
    <?php include 'templates/navigation.php'; ?>
 
-   <h2>API Test</h2>
+   <h2>API Results from DATA/data.json</h2>
 
    <?php if ( $blogsRec = retrieveBlogs ( )  ) : 
      
@@ -22,12 +22,10 @@
         <dl>
         <dt>ID: </dt>
         <dd><?php echo $blogInd->id; ?></dd>
-        </dl>
-        <dl>
+        
         <dt>Title: </dt>
         <dd><?php echo $blogInd->title; ?></dd>
-        </dl>
-        <dl>
+       
         <dt>Content: </dt>
         <dd><?php echo $blogInd->content; ?></dd>
         </dl>

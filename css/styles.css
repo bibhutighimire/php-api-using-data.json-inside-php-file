@@ -1,0 +1,56 @@
+html {
+    background-color: rgb(231, 229, 229);
+}
+.container {
+    width: 60%;
+    margin: 0 auto;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: rgb(194, 188, 188);
+  }
+  
+  .active {
+    background-color: #616361;
+  }
+  ol dl {
+      margin-bottom: 15px;
+      padding-bottom: 15px;
+      border-bottom: 2px dotted black;
+  }
+  ol dt {
+      font-size: x-large;
+      font-weight: bold;
+      margin: 0px;
+  }
+  ol dd {
+    font-size: x-large;
+    margin: 0px;
+}
+  footer {
+      background-color: #333 ;
+      height: 85px;
+  }
+  footer p {
+      color: white;
+      text-align: center;
+  }
